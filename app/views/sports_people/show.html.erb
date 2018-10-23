@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sports_person.name %>
+</p>
+
+<p>
+  <strong>Team:</strong>
+  <%= @sports_person.team %>
+</p>
+
+<p>
+  <strong>Avatar:</strong>
+  <%= image_tag @sports_person.avatar %>
+</p>
+
+<%= link_to 'Edit', edit_sports_person_path(@sports_person) %> |
+<%= link_to 'Back', sports_people_path %>
