@@ -10,5 +10,6 @@ SportsPerson.destroy_all
 10.times do
 	SportsPerson.create(
 		name: Faker::Name.unique.name,
-		team: Faker::Team.name)
+		team: Faker::Team.name
+		)
 end
